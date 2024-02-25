@@ -24,6 +24,6 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker tag weather-app ${{ secrets.DOCKER_USERNAME }}/nextjs-weather-app
+          docker tag weather-app ${{ secrets.DOCKER_USERNAME }}/weather-app
           docker push ${{ secrets.DOCKER_USERNAME }}/weather-app
 
